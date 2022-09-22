@@ -1,0 +1,55 @@
+{
+    "name": "staatic/crawler",
+    "type": "library",
+    "description": "Staatic allows you to generate a highly optimized static version of your site improving performance as well as security",
+    "keywords": [
+        "staatic",
+        "static site",
+        "generator",
+        "optimizer"
+    ],
+    "homepage": "https://staatic.com",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Staatic",
+            "email": "contact@staatic.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4.5",
+        "guzzlehttp/psr7": "^2.4.0",
+        "psr/log": "^3.0.0",
+        "ramsey/uuid": "^4.4.0",
+        "voku/simple_html_dom": "^4.8.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.23",
+        "symfony/var-dumper": "^6.0.9"
+    },
+    "config": {
+        "platform": {
+            "php": "8.0.21"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.x-dev"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+            "Staatic\\Crawler\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Staatic\\Crawler\\Tests\\": "tests/"
+        }
+    }
+}

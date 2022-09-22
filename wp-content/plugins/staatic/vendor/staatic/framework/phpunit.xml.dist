@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="./vendor/autoload.php" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage/>
+  <testsuites>
+    <testsuite name="Staatic Integration Tests">
+      <directory>./tests/Integration</directory>
+    </testsuite>
+    <testsuite name="Staatic Unit Tests">
+      <directory>./tests/Unit</directory>
+    </testsuite>
+  </testsuites>
+  <logging>
+    <!-- <testdoxText outputFile="php://stdout"/> -->
+  </logging>
+</phpunit>
